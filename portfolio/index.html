@@ -1,17 +1,112 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
-    <title>McCabe</title>
-  </head>
-  <body>
-    <h1> Graham McCabe</h1>
-    <ul>
-      <li><a href="https://gmccabe21212.github.io/portfolio/showcase">Showcase</a></li>
-      <li><a href="https://gmccabe21212.github.io/portfolio/about">About me</a></li>
-      <li><a href="https://gmccabe21212.github.io/portfolio/resume">Resume</a></li>
-      <li><a href="https://gmccabe21212.github.io/portfolio/contact">Contact</a></li>
-    </ul>
-  </body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graham's Portfolio</title>
+
+    <style>
+        /* NAVBAR */
+        .navbar {
+            background-color: #0D1B2A;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: center; /* Centers the logo */
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        /* BODY BACKGROUND */
+        body {
+            background-color: #E0E1DD;
+            padding-top: 80px; /* Prevents navbar overlap */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* MAIN IMAGE */
+        .main-image {
+            width: 350px; /* Adjust as needed */
+            height: auto;
+            border-radius: 10px;
+            border: 4px solid #415A77;
+            margin-bottom: 30px; /* Space between image and boxes */
+        }
+
+        /* BOXES CONTAINER */
+        .box-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap; /* Ensures responsiveness */
+            justify-content: center;
+        }
+
+        /* CLICKABLE BOXES */
+        .box {
+            width: 180px;
+            height: 150px;
+            background-color: #0D1B2A;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 10px;
+            border: 3px solid #415A77;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .box:hover {
+            background-color: #415A77;
+            transform: scale(1.05); /* Slight zoom effect */
+        }
+
+        /* RESPONSIVENESS */
+        @media (max-width: 768px) {
+            .box-container {
+                flex-direction: column;
+            }
+            .box {
+                width: 80%; /* Full width on smaller screens */
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">Graham's Portfolio</a>
+    </nav>
+
+    <!-- MAIN IMAGE -->
+    <img src="your-image.jpg" alt="Main Image" class="main-image">
+
+    <!-- NAVIGATION BOXES -->
+    <div class="box-container">
+        <a href="https://gmccabe21212.github.io/portfolio/showcase" class="box">Showcase</a>
+        <a href="https://gmccabe21212.github.io/portfolio/about" class="box">About Me</a>
+        <a href="https://gmccabe21212.github.io/portfolio/resume" class="box">Resume</a>
+        <a href="https://gmccabe21212.github.io/portfolio/contact" class="box">Contact</a>
+    </div>
+
+</body>
 </html>

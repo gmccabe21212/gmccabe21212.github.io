@@ -14,26 +14,32 @@
           box-sizing: border-box;
         }
 
+        .container {
+            display: flex; /* Enables flexbox */
+            align-items: center; /* Aligns items vertically */
+            gap: 20px; /* Adds space between the image and text */
+        }
+
         .profile-pic {
             width: 200px;  
             height: 200px; 
             border-radius: 50%; 
             object-fit: cover; 
             border: 4px solid #415A77; 
-            float: left;
-            margin-right: 20px;
+            
         }
 
         .text {
-          font-size: 18px
+          font-size: 18px;
+          max-width: 400px;
         }
         </style>
 
   </head>
   <body>
 
-    <div>
-      
+    <div class="contain">
+
       <p class="text">
         Hey, I’m Graham. I’m a student High Point University studying computer science. I’m always looking for new challenges and ways to grow myself. I’m originally from Ocean City, Maryland, and I’ve always had a curiosity for how things work, especially when it comes to technology. Whether I’m coding a new project, learning a new skill, or tackling a tough problem, I’m motivated by the process of figuring things out and improving along the way. I love staying busy, pushing myself to learn more, and finding creative solutions to whatever comes my way.
       </p>

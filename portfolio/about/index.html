@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <title>About me</title>
     <style>
         body {
           background-color: #E0E1DD;
@@ -17,11 +17,15 @@
         }
 
         .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center; 
-            text-align: center; 
-            gap: 20px; 
+          display: flex; 
+          align-items: center; 
+          gap: 50px; 
+        }
+
+        .image-column {
+          display: flex;
+          flex-direction: column;
+          gap: 15px; 
         }
 
         .profile-pic {
@@ -40,17 +44,19 @@
             padding: 20px; 
             border-radius: 10px; 
             border: 4px solid #415A77; 
-            text-align: left; 
+            text-align: left;
         }
-        </style>
+      </style>
 
   </head>
   <body>
 
     <div class="container">
-
-      <img src="me.JPG" alt="Picture of me" class="profile-pic">
-
+      <div class = "image-column">
+        <img src="me.JPG" alt="Picture of me" class="profile-pic">
+        <img src="me.JPG" alt="Picture of me" class="profile-pic">
+        <img src="me.JPG" alt="Picture of me" class="profile-pic">
+      </div>
       <h3> About me </h3>
 
       <p class="text">

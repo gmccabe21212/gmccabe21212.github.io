@@ -108,6 +108,47 @@
           display: block; 
           margin-bottom: 10px; 
         }
+
+        footer {
+            background-color: #111;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 14px;
+            width: 100%;
+            margin-top: auto;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .footer-links li {
+            display: inline;
+        }
+
+        .footer-links a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .box-container {
+                flex-direction: column;
+            }
+            .box {
+                width: 80%; 
+            }
+        }
       </style>
 
   </head>
@@ -139,6 +180,19 @@
 
       </div>
     </div>
+
+    <footer>
+      <div class="footer-container">
+          <p>&copy; 2025 Graham McCabe. All rights reserved.</p>
+          <ul class="footer-links">
+              <li><a href="https://github.com/gmccabe21212" target="_blank">GitHub</a></li>
+              <li><a href="https://www.linkedin.com/in/graham-mccabe-6292192a0/" target="_blank">LinkedIn</a></li>
+              <li><a href="mailto:grahamamccabe@gmail.com">Email</a></li>
+          </ul>
+      </div>
+  </footer>
+
+    
     
   </body>
 </html>

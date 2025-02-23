@@ -1,51 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Showcase</title>
     <link rel="icon" type="favicon.ico" href="favicon.ico">
-
     <style>
-
         body {
             background-color: #E0E1DD;
             margin: 0;
             padding: 0;
             text-align: center;
         }
-
         .navbar {
-            background-color: #0D1B2A; 
+            background-color: #0D1B2A;
             padding: 15px 20px;
             display: flex;
-            justify-content: center; 
+            justify-content: center;
             align-items: center;
             position: fixed;
-            width: 100%; 
+            width: 100%;
             top: 0;
             left: 0;
-            z-index: 1000; 
+            z-index: 1000;
         }
-
         .navbar .logo {
             font-size: 24px;
             color: white;
             font-weight: bold;
             text-decoration: none;
         }
-
         .nav-links {
-            list-style: none; 
+            list-style: none;
             display: flex;
             gap: 10px;
             flex-wrap: wrap;
         }
-
         .nav-links li {
             display: inline;
         }
-
         .nav-links a {
             text-decoration: none;
             color: white;
@@ -53,22 +46,14 @@
             padding: 10px 15px;
             transition: 0.3s;
         }
-
         .nav-links a:hover {
             background-color: #415A77;
             border-radius: 5px;
         }
-
         .container {
             margin-top: 100px;
             padding: 20px;
         }
-
-        h1 {
-            color: #0D1B2A;
-            font-size: 32px;
-        }
-
         .projects {
             display: flex;
             flex-wrap: wrap;
@@ -77,7 +62,6 @@
             max-width: 1200px;
             margin: 0 auto;
         }
-
         .project {
             background-color: #0D1B2A;
             color: white;
@@ -88,31 +72,26 @@
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s ease;
         }
-
         .project:hover {
             transform: scale(1.05);
         }
-
+        .project a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
         .project img {
             width: 100%;
             height: 180px;
             object-fit: cover;
         }
-
         .project-info {
             padding: 15px;
         }
-
         .project h2 {
             font-size: 20px;
             margin-bottom: 10px;
         }
-
-        .project p {
-            font-size: 14px;
-            line-height: 1.5;
-        }
-
         footer {
             background-color: #111;
             color: #fff;
@@ -122,85 +101,46 @@
             width: 100%;
             margin-top: 40px;
         }
-
-        .footer-links {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-        }
-
-        .footer-links li {
-            display: inline;
-        }
-
-        .footer-links a {
-            color: #fff;
-            text-decoration: none;
-        }
-
-        @media (max-width: 768px) {
-            .projects {
-                flex-direction: column;
-                align-items: center;
-            }
-        }
-
     </style>
 </head>
 <body>
-
-  <nav class="navbar">
-    <a class="logo">Graham's Portfolio</a>
-    <ul class="nav-links">
-      <li><a href="https://gmccabe21212.github.io/portfolio/">Home</a></li>
-      <li><a href="https://gmccabe21212.github.io/portfolio/about">About me</a></li>
-      <li><a href="https://gmccabe21212.github.io/portfolio/resume">Resume</a></li>
-      <li><a href="https://gmccabe21212.github.io/portfolio/contact">Contact</a></li>
-    </ul>
-</nav>
-
+    <nav class="navbar">
+        <a class="logo">Graham's Portfolio</a>
+        <ul class="nav-links">
+            <li><a href="https://gmccabe21212.github.io/portfolio/">Home</a></li>
+            <li><a href="https://gmccabe21212.github.io/portfolio/about">About me</a></li>
+            <li><a href="https://gmccabe21212.github.io/portfolio/resume">Resume</a></li>
+            <li><a href="https://gmccabe21212.github.io/portfolio/contact">Contact</a></li>
+        </ul>
+    </nav>
     <div class="container">
         <h1>Showcase</h1>
         <div class="projects">
-            <div class="project">
+            <a href="https://github.com/gmccabe21212/decentralized-supply-chain" class="project">
                 <img src="project1.jpg" alt="Project 1">
                 <div class="project-info">
                     <h2>Decentralized Supply Chain Simulation</h2>
-                    <p> INSERT DESC HERE</p>
+                    <p>INSERT DESC HERE</p>
                 </div>
-            </div>
-
-            <div class="project">
+            </a>
+            <a href="https://github.com/gmccabe21212/csc2710-group-sorting" class="project">
                 <img src="project2.jpg" alt="Project 2">
                 <div class="project-info">
                     <h2>Sorting Algorithms</h2>
                     <p>INSERT DESC HERE</p>
                 </div>
-            </div>
-
-            <div class="project">
+            </a>
+            <a href="project3.html" class="project">
                 <img src="project3.jpg" alt="Project 3">
                 <div class="project-info">
                     <h2>Project Title 3</h2>
                     <p>INSERT DESC HERE</p>
                 </div>
-            </div>
+            </a>
         </div>
     </div>
-
-
     <footer>
-      <div class="footer-container">
-          <p>&copy; 2025 Graham McCabe. All rights reserved.</p>
-          <ul class="footer-links">
-              <li><a href="https://github.com/gmccabe21212" target="_blank">GitHub</a></li>
-              <li><a href="https://www.linkedin.com/in/graham-mccabe-6292192a0/" target="_blank">LinkedIn</a></li>
-              <li><a href="mailto:grahamamccabe@gmail.com">Email</a></li>
-          </ul>
-      </div>
-  </footer>
-
+        <p>&copy; 2025 Graham McCabe. All rights reserved.</p>
+    </footer>
 </body>
 </html>

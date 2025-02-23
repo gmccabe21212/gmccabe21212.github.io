@@ -13,9 +13,47 @@
             text-align: center;
             color: #0D1B2A;
         }
+        .navbar {
+            background-color: #0D1B2A;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        .navbar .logo {
+            font-size: 24px;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .nav-links li {
+            display: inline;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 10px 15px;
+            transition: 0.3s;
+        }
+        .nav-links a:hover {
+            background-color: #415A77;
+            border-radius: 5px;
+        }
         .container {
             width: 50%;
-            margin: 50px auto;
+            margin: 100px auto 50px;
             background: white;
             padding: 20px;
             border-radius: 10px;
@@ -42,9 +80,41 @@
         button:hover {
             background: #415A77;
         }
+        footer {
+            background-color: #111;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 14px;
+            width: 100%;
+            margin-top: 40px;
+        }
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        .footer-links li {
+            display: inline;
+        }
+        .footer-links a {
+            color: #fff;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
+    <nav class="navbar">
+        <a class="logo">Graham's Portfolio</a>
+        <ul class="nav-links">
+            <li><a href="https://gmccabe21212.github.io/portfolio/">Home</a></li>
+            <li><a href="https://gmccabe21212.github.io/portfolio/about">About me</a></li>
+            <li><a href="https://gmccabe21212.github.io/portfolio/showcase">Showcase</a></li>
+            <li><a href="https://gmccabe21212.github.io/portfolio/contact">Contact</a></li>
+        </ul>
+    </nav>
     <div class="container">
         <h2>Contact Me</h2>
         <form action="https://formspree.io/f/{your_form_id}" method="POST">
@@ -54,5 +124,15 @@
             <button type="submit">Send Message</button>
         </form>
     </div>
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 Graham McCabe. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="https://github.com/gmccabe21212" target="_blank">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/graham-mccabe-6292192a0/" target="_blank">LinkedIn</a></li>
+                <li><a href="mailto:grahamamccabe@gmail.com">Email</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>

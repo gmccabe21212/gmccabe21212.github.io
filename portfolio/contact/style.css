@@ -21,7 +21,7 @@ body {
 
 .navbar .logo {
     font-size: 24px;
-    color: white;
+    color: #E0E1DD;
     font-weight: bold;
     text-decoration: none;
 }
@@ -39,7 +39,7 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: white;
+    color: #E0E1DD;
     font-size: 18px;
     padding: 10px 15px;
     transition: 0.3s;
@@ -53,7 +53,7 @@ body {
 .container {
     width: 50%;
     margin: 100px auto 50px;
-    background: white;
+    background: #E0E1DD;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -66,12 +66,12 @@ input, textarea {
     margin: 10px 0;
     border: 1px solid #415A77;
     border-radius: 5px;
-    background-color: #FFFFFF;
+    background-color: #E0E1DD;
 }
 
 button {
     background: #0D1B2A;
-    color: white;
+    color: #E0E1DD;
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
@@ -84,8 +84,8 @@ button:hover {
 }
 
 footer {
-    background-color: #111;
-    color: #fff;
+    background-color: #0D1B2A;
+    color: #E0E1DD;
     text-align: center;
     padding: 20px 0;
     font-size: 14px;
@@ -106,6 +106,6 @@ footer {
 }
 
 .footer-links a {
-    color: #fff;
+    color: #E0E1DD;
     text-decoration: none;
 }

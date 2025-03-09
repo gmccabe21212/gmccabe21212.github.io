@@ -4,104 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Showcase</title>
-    <link rel="icon" type="favicon.ico" href="favicon.ico">
-    <style>
-        body {
-            background-color: #E0E1DD;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        .navbar {
-            background-color: #0D1B2A;
-            padding: 15px 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            left: 0;
-            z-index: 1000;
-        }
-        .navbar .logo {
-            font-size: 24px;
-            color: white;
-            font-weight: bold;
-            text-decoration: none;
-        }
-        .nav-links {
-            list-style: none;
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
-        .nav-links li {
-            display: inline;
-        }
-        .nav-links a {
-            text-decoration: none;
-            color: white;
-            font-size: 18px;
-            padding: 10px 15px;
-            transition: 0.3s;
-        }
-        .nav-links a:hover {
-            background-color: #415A77;
-            border-radius: 5px;
-        }
-        .container {
-            margin-top: 100px;
-            padding: 20px;
-        }
-        .projects {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .project {
-            background-color: #0D1B2A;
-            color: white;
-            border-radius: 10px;
-            overflow: hidden;
-            width: 300px;
-            text-align: center;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease;
-        }
-        .project:hover {
-            transform: scale(1.05);
-        }
-        .project a {
-            text-decoration: none;
-            color: inherit;
-            display: block;
-        }
-        .project img {
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-        }
-        .project-info {
-            padding: 15px;
-        }
-        .project h2 {
-            font-size: 20px;
-            margin-bottom: 10px;
-        }
-        footer {
-            background-color: #111;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-            font-size: 14px;
-            width: 100%;
-            margin-top: 40px;
-        }
-    </style>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="showcase-style.css"> <!-- Linking the external CSS file -->
 </head>
 <body>
     <nav class="navbar">
@@ -127,7 +31,7 @@
                 <img src="project2.png" alt="Project 2">
                 <div class="project-info">
                     <h2>Sorting Algorithms</h2>
-                    <p>This project compares the performance of multiple sorting algorithms, including Quick, Merge, Heap, and Bubble Sort, across different dataset types (sorted, reverse-sorted, random, and duplicates). Implemented in C++, it measures execution time and efficiency, visualizing results using Python and R</p>
+                    <p>This project compares the performance of multiple sorting algorithms, including Quick, Merge, Heap, and Bubble Sort, across different dataset types (sorted, reverse-sorted, random, and duplicates). Implemented in C++, it measures execution time and efficiency, visualizing results using Python and R.</p>
                 </div>
             </a>
             <a href="project3.html" class="project">
